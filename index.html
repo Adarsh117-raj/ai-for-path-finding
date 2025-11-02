@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warehouse Robot Path Planning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2>Warehouse Robot Path Planning</h2>
+    <canvas id="gridCanvas" width="500" height="500"></canvas>
+    
+    <div class="controls">
+        <button onclick="setMode('start')">Set Start</button>
+        <button onclick="setMode('goal')">Set Goal</button>
+        <button onclick="setMode('obstacle')">Add Obstacles</button>
+        <button onclick="findPath()">Find Path</button>
+        <button onclick="resetGrid()">Reset</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
